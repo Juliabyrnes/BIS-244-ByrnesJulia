@@ -11,11 +11,11 @@ library(tidyverse)
 
 # Read in file AMD.csv
 temp <- getwd()
+setwd(temp)
 
 AMD <- read_csv("AMD.csv")
 view(AMD)
 
-setwd(temp)
 
 # Plot the data 
 p <- ggplot(data = AMD,
